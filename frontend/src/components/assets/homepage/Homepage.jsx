@@ -13,7 +13,7 @@ const Homepage = () => {
       alert("Please login to access the homepage.");
       navigate("/login"); // Redirect to login if no token
     } else {
-      fetch("https://backend-inky-iota.vercel.app/api/verify-token", {
+      fetch("https://registration-form-liart.vercel.app/api/verify-token", {
         headers: {
           Authorization: `Bearer ${token}`, // Send the token in headers
         },
