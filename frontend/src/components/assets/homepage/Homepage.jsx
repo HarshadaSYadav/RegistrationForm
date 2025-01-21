@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Homepage.css";
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     const token = localStorage.getItem("token");
 
@@ -33,26 +32,33 @@ const Homepage = () => {
         });
     }
   }, [navigate]);
-  
+
   const handleProfileClick = () => {
     navigate("/profile"); // Redirect to profile page
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("token"); // Clear token
+    alert("You have been logged out.");
+    navigate("/signup"); // Redirect to signup page
   };
 
   return (
     <div className="user-homepage">
       <header className="homepage-header">
-
-  
-  <h1 className="homepage-title">Welcome To The Page</h1>
-  <div className="header-actions">
-
-  </div>
-</header>
+        <h1 className="homepage-title">Welcome To The Page</h1>
+        <div className="header-actions">
+          <button className="profile-button" onClick={handleProfileClick}>
+            Go to Profile
+          </button>
+          <button className="logout-button" onClick={handleLogout}>
+            Logout
+          </button>
+        </div>
+      </header>
       <main className="homepage-main">
         <h2 className="homepage-welcome"></h2>
-        <p className="homepage-description">
-         You Are Logged In!!!
-        </p>
+        <p className="homepage-description">You Are Logged In!!!</p>
       </main>
     </div>
   );
