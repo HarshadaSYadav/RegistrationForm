@@ -1,0 +1,85 @@
+body {
+    background-color: #efb65b;
+	background-size: 400% 400%;
+	height: 100vh
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    
+  }
+  
+  .welcome-header h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  
+  .welcome-actions {
+    margin: 20px 0;
+  }
+  
+  .welcome-button {
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    margin: 0 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .signup-button {
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff; /* White text */
+    background-color: #0a4c7e; /* Black background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #83b7e8;
+  }
+  
+  .login-button {
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff; /* White text */
+    background-color: #0a4c7e; /* Black background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #83b7e8;
+  }
+  
+  .welcome-footer p {
+    margin: 20px 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .welcome-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .welcome-footer ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
