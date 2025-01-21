@@ -9,7 +9,7 @@ require("dotenv").config();
 const app = express();
 
 const corsOptions = {
-  origin:'http://localhost:3000',// Allow the frontend domain
+  origin:'https://registration-frontend-liart.vercel.app',// Allow the frontend domain
   methods: 'GET,POST,PUT,DELETE,OPTIONS', // Allowed methods
   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   };
