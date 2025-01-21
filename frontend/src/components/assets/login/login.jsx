@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Login form data:", formData); // Log the form data
     try {
-      const response = await fetch("http://localhost:5000/api/login",
+      const response = await fetch("https://registration-form-liart.vercel.app/api/login",
         {
           method: "POST",
           headers: {
