@@ -49,7 +49,7 @@ const Signup = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:5000/api/signup", {
+      const response = await fetch("https://registration-form-liart.vercel.app/api/signup", {
         method: "POST",
         body: data,
       });
